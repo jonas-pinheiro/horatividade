@@ -1,0 +1,55 @@
+# Fonte do modelo .xlsx — planilha por aula
+# Lido por scripts/gerar_formatos.py. O binario modelo_planilha.xlsx e artefato regeneravel.
+
+planilha:
+  titulo: "Planejamento por aula"
+  aba: "Planejamento"
+  cabecalho_travado: true      # congela a linha 1
+  linhas_em_branco: 80         # linhas pre-formatadas para preenchimento
+
+colunas:
+  - nome: "Nº"
+    largura: 6
+  - nome: "Data"
+    largura: 12
+    formato: "dd/mm"
+  - nome: "Bimestre"
+    largura: 10
+    validacao: ["1º", "2º", "3º", "4º"]
+  - nome: "Turma"
+    largura: 10
+  - nome: "Unidade"
+    largura: 24
+  - nome: "Conteúdo"
+    largura: 32
+  - nome: "Objetivo de aprendizagem"
+    largura: 46
+  - nome: "Nível cognitivo"
+    largura: 16
+    validacao: ["lembrar", "compreender", "aplicar", "analisar", "avaliar", "criar"]
+  - nome: "Metodologia"
+    largura: 28
+    validacao:
+      - "aula expositiva dialogada"
+      - "resolução de exercícios"
+      - "atividade em duplas ou grupos"
+      - "demonstração experimental"
+      - "estudo dirigido"
+      - "seminário"
+  - nome: "Recursos"
+    largura: 24
+  - nome: "Instrumento avaliativo"
+    largura: 26
+    validacao:
+      - "avaliação bimestral"
+      - "atividade avaliativa"
+      - "lista de exercícios"
+      - "relatório de atividade prática"
+      - "apresentação"
+      - "observação registrada"
+      - "—"
+
+nota: >
+  As listas de validacao reproduzem o exemplo do curso (referencial Bloom).
+  Ajuste os valores aceitos aos do template da SUA escola antes de usar —
+  ou apague a validacao das colunas que forem texto livre.

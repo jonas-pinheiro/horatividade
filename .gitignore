@@ -1,0 +1,11 @@
+dist/
+CONTEXTO/termos_proibidos.txt
+contexto/termos_proibidos.txt
+*.docx
+*.xlsx
+*.tmp
+*.bak
+~$*
+__pycache__/
+.DS_Store
+Thumbs.db
