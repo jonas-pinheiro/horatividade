@@ -14,9 +14,9 @@ O produto é um curso curto (9 aulas, ~107 min) que ensina professor de anos fin
 | Decisão | Recomendação registrada |
 |---|---|
 | Nível de suporte prometido | Sem suporte individual: FAQ + atualizações do material. Prometido antes de vender, sustentável em volume |
-| Pré-venda progressiva × curso completo no ar | Completo no ar: a turma zero antecipa a validação que a pré-venda daria, e o prazo de 30/09 favorece entrega única |
+| Pré-venda progressiva × curso completo no ar | Completo no ar: a turma piloto antecipa a validação que a pré-venda daria, e o prazo de 30/09 favorece entrega única |
 | Plataforma de entrega | Hotmart Club (infra já existente do produto anterior) |
-| Gravação da turma zero vira aula? | Sim para a Aula 5 (já refletido no briefing); demais regravadas limpas |
+| Gravação da turma piloto vira aula? | Sim para a Aula 5 (já refletido no briefing); demais regravadas limpas |
 | Ferramenta da demonstração | Claude (o curso já assume o plano gratuito dele); tabela de equivalência cobre as demais |
 
 ## Escolhas feitas durante o build (com a alternativa descartada)
@@ -32,7 +32,7 @@ O produto é um curso curto (9 aulas, ~107 min) que ensina professor de anos fin
 9. **Diretrizes do bump entregam o bloco da Parte 3 + restrições extras**, não as seis partes repetidas oito vezes. É o modelo "plugável" ensinado na Aula 3. Alternativa (oito blocos completos) descartada: duplicação e risco de divergência entre cópias.
 10. **Referenciais que dependem de documento oficial (BNCC, estadual, técnico, ENEM) exigem um arquivo `06_*` copiado do oficial pelo professor.** Única forma de cumprir "nunca inventar código" na prática.
 11. **Pasta `CONTEXTO/` mantida em maiúsculas** (veio assim); scripts procuram `contexto/` e `CONTEXTO/`. Alternativa (renomear) descartada para não quebrar nada do usuário.
-12. **Acrescentei `producao/roteiro_turma_zero.md`** (fora da spec): o usuário vai apresentar aos colegas e os briefings cobriam só a gravação, não a sessão ao vivo — inclui convite, agenda de 2h30 e coleta de depoimento.
+12. **Acrescentei `producao/roteiro_turma_piloto.md`** (fora da spec): o usuário vai apresentar aos colegas e os briefings cobriam só a gravação, não a sessão ao vivo — inclui convite, agenda de 2h30 e coleta de depoimento.
 13. **Acrescentei `PROMPT_LP_CAPTACAO.md` na raiz** (pedido desta sessão). LP não entra nos zips.
 14. **Palavra "prova" evitada nos materiais do principal**; "avaliação bimestral" é o valor de instrumento. O critério de escopo veta material *sobre* provas, não a existência de datas de avaliação. "Semana de provas" aparece apenas em `demo/` (interno).
 15. **Termos proibidos incluem "transforme/revolucione/descomplique"**, além de concorrentes, VTSD e referências pessoais — o build falha se a voz escorregar (pegou um caso real durante este build, corrigido).

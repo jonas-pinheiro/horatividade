@@ -2,7 +2,7 @@
 
 **Objetivo:** ensinar as quatro passadas de auditoria mostrando erro real na tela — e fixar o enquadramento que neutraliza o estigma.
 **Entregável do aluno no fim:** checklist de auditoria aplicado ao próprio planejamento.
-**Duração alvo:** ~11 min. Tela limpa, gravada depois da turma zero (precisa de exemplo controlado de erro).
+**Duração alvo:** ~11 min. Tela limpa, gravada depois da turma piloto (precisa de exemplo controlado de erro).
 
 ## Beats de tela, em ordem
 

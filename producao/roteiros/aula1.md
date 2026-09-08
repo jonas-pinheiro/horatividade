@@ -2,7 +2,7 @@
 
 **Objetivo:** provar, na tela e sem corte, que o problema é ausência de contexto — e apresentar o A.U.L.A. como resposta.
 **Entregável do aluno no fim:** tabela de equivalência entre ferramentas baixada; decisão de qual ferramenta vai usar.
-**Duração alvo:** ~9 min. Tela limpa, gravada depois da turma zero.
+**Duração alvo:** ~9 min. Tela limpa, gravada depois da turma piloto.
 
 ## Beats de tela, em ordem
 

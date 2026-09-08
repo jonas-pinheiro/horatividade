@@ -31,7 +31,7 @@ Entregue ao vivo, grave a sessão, e a gravação vira o produto. Isso valida o 
 
 > **Estratégia validadora do M01:** organizar evento ao vivo → entregar conteúdo → gravar → usar a gravação como produto inicial → refinar com base na interação real.
 
-**Aplicação direta:** é exatamente o passo 3 do plano (turma zero com os colegas).
+**Aplicação direta:** é exatamente o passo 3 do plano (turma piloto com os colegas).
 
 ### 1.3 Pré-venda como motor de execução (M03, Aula 03)
 
@@ -203,7 +203,7 @@ O bump entra no lançamento, não depois. Ele faz parte do desenho do produto.
 |---|---|
 | Gravável em 1–2 tardes | Definido pelo Jonas na concepção |
 | Produto vendável até 30/09/2026 | Prazo duro do plano |
-| A gravação nasce da turma zero ao vivo | Passo 3 do plano |
+| A gravação nasce da turma piloto ao vivo | Passo 3 do plano |
 | Precisa entregar **um planejamento anual pronto**, não conhecimento sobre IA | O quadro é evento com fim, não taxa |
 | Suporte definido antes de vender | Padrão de risco identificado (travar na entrega) |
 
@@ -261,7 +261,7 @@ O aluno mede resultado assim: *tinha planejamento do ano pronto e no formato da 
 
 - [ ] Formato: gravado completo antes de vender **ou** pré-venda com liberação progressiva
 - [ ] Nível de suporte prometido (e onde ele acontece)
-- [ ] Se a turma zero é gravada como aula ou refeita depois em tela limpa
+- [ ] Se a turma piloto é gravada como aula ou refeita depois em tela limpa
 - [ ] Quais disciplinas entram nos exemplos (Jonas é física; o exemplo precisa ser legível para professor de humanas)
 - [ ] Se entra alguma coisa de Educação Especial / AEE — dor forte, mas fora da vivência direta do Jonas
 - [ ] Plataforma de entrega: Hotmart Club ou área externa

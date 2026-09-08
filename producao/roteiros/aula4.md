@@ -2,7 +2,7 @@
 
 **Objetivo:** separar conteúdo de formato e fazer o template da escola virar regra permanente via template reverso.
 **Entregável do aluno no fim:** `04_TEMPLATE.md` corrigido e salvo no projeto; um documento de teste gerado no formato da escola.
-**Duração alvo:** ~16 min. Base: turma zero.
+**Duração alvo:** ~16 min. Base: turma piloto.
 
 ## Beats de tela, em ordem
 

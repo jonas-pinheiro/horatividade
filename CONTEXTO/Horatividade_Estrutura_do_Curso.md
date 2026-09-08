@@ -356,13 +356,13 @@ Atende os cinco critérios do bump ideal (M04/M05): digital, consumo curto, comp
 
 ## 5. COMO ISSO SE ENCAIXA NO PLANO
 
-### Turma zero (Passo 3) — o que gravar
+### Turma piloto (Passo 3) — o que gravar
 
 A sessão ao vivo cobre **Aulas 2 a 6**. São as que precisam de dúvida real de professor para ficarem certas, e são as que geram depoimento com nome e rosto.
 
 Aulas 0, 1, 7 e 8 são gravadas depois, em tela limpa: dependem de roteiro e de exemplo controlado, não de plateia.
 
-**Decisão a tomar antes da turma zero:** a gravação ao vivo vira aula do curso ou é insumo para regravar limpo? Recomendação: **usar a gravação ao vivo como aula da 5**, porque ritmo real e erro real são a credibilidade do produto, e regravar limpo as demais. Perde acabamento, ganha a única coisa que a Skooly não tem.
+**Decisão a tomar antes da turma piloto:** a gravação ao vivo vira aula do curso ou é insumo para regravar limpo? Recomendação: **usar a gravação ao vivo como aula da 5**, porque ritmo real e erro real são a credibilidade do produto, e regravar limpo as demais. Perde acabamento, ganha a única coisa que a Skooly não tem.
 
 ### Ângulos de reel que saem daqui (Passo 2)
 
@@ -374,7 +374,7 @@ Os três mostram tela e professor, nenhum promete milagre, e todos são reprodut
 
 ### Prazo
 
-Estrutura fechada → turma zero fim de agosto → edição e materiais em setembro → **produto vendável até 30/09**. Compatível com o Passo 4.
+Estrutura fechada → turma piloto fim de agosto → edição e materiais em setembro → **produto vendável até 30/09**. Compatível com o Passo 4.
 
 ---
 

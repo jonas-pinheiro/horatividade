@@ -2,7 +2,7 @@
 
 **Objetivo:** ensinar a diferença entre arquivo (dado) e instrução (regra) e montar o bloco de diretriz de seis partes na tela.
 **Entregável do aluno no fim:** bloco de diretriz próprio colado nas instruções do projeto.
-**Duração alvo:** ~14 min. Base: turma zero; o corte da troca de referencial precisa ficar limpo — regravar se preciso.
+**Duração alvo:** ~14 min. Base: turma piloto; o corte da troca de referencial precisa ficar limpo — regravar se preciso.
 
 ## Beats de tela, em ordem
 

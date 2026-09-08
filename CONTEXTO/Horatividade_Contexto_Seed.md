@@ -217,7 +217,7 @@ Vem antes de gravar o curso porque é a etapa mais barata que existe e porque os
 
 **Critério de seguir:** um dos três reels com tração claramente acima dos outros e volume contável de comentários. Se os três morrerem igualmente, o problema é o ângulo — reformular antes de gravar qualquer coisa.
 
-### Passo 3 — Turma zero ao vivo (fim ago / início set)
+### Passo 3 — Turma piloto ao vivo (fim ago / início set)
 Reunir os colegas — os mesmos que já vieram pedir os GPTs — e fazer ao vivo, montando um planejamento real. Cobrar pouco ou nada; o preço é depoimento gravado.
 
 **Uma sessão entrega três coisas:** a gravação que vira o curso, os depoimentos que faltam em todos os produtos anteriores, e as dúvidas reais que definem o material. É a instrução do VTSD (entregar ao vivo primeiro, gravar depois) e resolve o gargalo de prova social contra concorrente com 40 mil clientes.
@@ -244,7 +244,7 @@ Banco de questões / montagem de provas (produto 2, depois de fevereiro) · pág
 
 **Se os reels performarem mas ninguém comprar:** professor quer a ferramenta pronta, não quer aprender a fazer. O produto não é curso — é o pacote de contextos vendido direto, mais barato, sem aula. Pivô de uma semana.
 
-**Se a turma zero ao vivo deixar Jonas broxado:** isso é informação, não fracasso. Significa que entrega e suporte são o que drena. Formato certo passa a ser produto seco, sem comunidade e sem promessa de suporte, preço menor e volume maior.
+**Se a turma piloto ao vivo deixar Jonas broxado:** isso é informação, não fracasso. Significa que entrega e suporte são o que drena. Formato certo passa a ser produto seco, sem comunidade e sem promessa de suporte, preço menor e volume maior.
 
 ---
 
@@ -286,7 +286,7 @@ Jonas levantou receio em três frentes e chegou a considerar excluir Londrina da
 
 **Colégio:** verificar se há cláusula de exclusividade ou dedicação exclusiva no contrato (raro para professor horista em escola particular). **Nunca usar nome do colégio, template real ou material didático identificável nas gravações** — monta exemplo genérico. Isso remove o único argumento legítimo que alguém poderia levantar.
 
-**Colegas:** eles já pedem de graça. Cobrar de estranho na internet enquanto continua ajudando colega de corredor é normal. O risco pequeno (alguém se sentir mal) se resolve convidando-os como turma zero, sem pagar, com o depoimento deles fazendo a coisa existir.
+**Colegas:** eles já pedem de graça. Cobrar de estranho na internet enquanto continua ajudando colega de corredor é normal. O risco pequeno (alguém se sentir mal) se resolve convidando-os como turma piloto, sem pagar, com o depoimento deles fazendo a coisa existir.
 
 **Exposição pessoal:** é a única real e não tem solução de configuração. **Padrão a observar:** os produtos anteriores (ApF, CnP) travaram na fronteira entre criar e mostrar/entregar. Este depende mais da cara de Jonas do que os dois anteriores. O que ajuda é reduzir o tamanho do primeiro passo — não é "se anunciar", é gravar três reels mostrando um planejamento sendo montado. Trabalho técnico, não performance.
 

@@ -1,4 +1,4 @@
-# Turma zero — roteiro da sessão ao vivo com os colegas
+# Turma piloto — roteiro da sessão ao vivo com os colegas
 
 **O que é:** a primeira entrega do curso, ao vivo, para os professores que já pedem os GPTs. A sessão cobre as **Aulas 2 a 6** (as que precisam de dúvida real). Aulas 0, 1, 7 e 8 são gravadas depois, em tela limpa.
 

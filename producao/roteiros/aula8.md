@@ -2,7 +2,7 @@
 
 **Objetivo:** converter o resultado em sistema permanente: o que fica, o que se atualiza, e a ata que faz o repositório melhorar sozinho.
 **Entregável do aluno no fim:** `05_ATA_DO_PROJETO.md` criado no projeto; clareza do custo do ano 2 (uma hora, não uma tarde).
-**Duração alvo:** ~6 min. Tela limpa, gravada depois da turma zero.
+**Duração alvo:** ~6 min. Tela limpa, gravada depois da turma piloto.
 
 ## Beats de tela, em ordem
 

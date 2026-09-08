@@ -2,7 +2,7 @@
 
 **Objetivo:** montar, na tela, o repositório de uma disciplina: cinco camadas, cinco arquivos nomeados, curadoria e privacidade.
 **Entregável do aluno no fim:** projeto criado na ferramenta com os 5 arquivos do repositório-modelo preenchidos (ou em preenchimento).
-**Duração alvo:** ~15 min. Base: gravação da turma zero (dúvidas reais); regravar limpa se necessário.
+**Duração alvo:** ~15 min. Base: gravação da turma piloto (dúvidas reais); regravar limpa se necessário.
 
 ## Beats de tela, em ordem
 

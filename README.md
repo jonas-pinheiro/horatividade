@@ -10,7 +10,7 @@ Tudo o que precisa existir em arquivo para o curso **Horatividade (método A.U.L
 | `demo/escola_ficticia/` | Colégio Exemplo: o cenário único de todos os exemplos e da gravação | nunca |
 | `produto/principal/` | materiais do curso (R$97): apoios, repositório-modelo, formatos, exemplos | sim |
 | `produto/bump/` | Kit Diretriz Pedagógica + Formatos (R$47) | sim |
-| `producao/` | briefings das aulas 0–8, checklist de gravação, blindagem de tela, roteiro da turma zero | nunca |
+| `producao/` | briefings das aulas 0–8, checklist de gravação, blindagem de tela, roteiro da turma piloto | nunca |
 | `scripts/` | geração de formatos, verificação de vazamento, empacotamento | nunca |
 | `dist/` | zips gerados (artefato, gitignored) | — |
 
@@ -43,4 +43,4 @@ Com make: `make formatos`, `make verifica`, `make pacote`, `make limpa`. A vers�
 
 - `PROMPT_LP_CAPTACAO.md` — prompt pronto para montar a landing page de captação no Claude Design (marca preto/dourado)
 - `logo_*.png` — arquivos de marca (preto `#060606`, dourado `#CE9631`, slogan "Burocracia resolvida. A aula é sua.")
-- `producao/roteiro_turma_zero.md` — a sessão ao vivo com os colegas, passo a passo
+- `producao/roteiro_turma_piloto.md` — a sessão ao vivo com os colegas, passo a passo

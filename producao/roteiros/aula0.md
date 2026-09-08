@@ -2,7 +2,7 @@
 
 **Objetivo:** firmar o contrato do curso: o que o aluno terá no fim, o que precisa ter em mãos, como assistir.
 **Entregável do aluno no fim:** checklist de pré-requisitos baixado e separado.
-**Duração alvo:** ~4 min. Tela limpa (sem plateia), gravada depois da turma zero.
+**Duração alvo:** ~4 min. Tela limpa (sem plateia), gravada depois da turma piloto.
 
 ## Beats de tela, em ordem
 

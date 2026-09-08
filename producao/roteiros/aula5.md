@@ -2,7 +2,7 @@
 
 **Objetivo:** provar a promessa: do repositório ao planejamento bimestral pronto, em gravação contínua.
 **Entregável do aluno no fim:** mapa do ano aprovado + planejamento de um bimestre gerado no formato da escola.
-**Duração alvo:** ~20 min. **Recomendação em vigor: usar a gravação da turma zero como a própria aula** — ritmo real e erro real são a credibilidade do produto.
+**Duração alvo:** ~20 min. **Recomendação em vigor: usar a gravação da turma piloto como a própria aula** — ritmo real e erro real são a credibilidade do produto.
 
 ## Beats de tela, em ordem
 

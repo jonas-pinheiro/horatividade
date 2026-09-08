@@ -2,7 +2,7 @@
 
 **Objetivo:** mostrar que, com o repositório, plano de aula deixa de ser pedido e vira derivação do planejamento.
 **Entregável do aluno no fim:** planos de aula do 1º bimestre gerados em lote, cada um citando a linha de origem.
-**Duração alvo:** ~12 min. Base: turma zero.
+**Duração alvo:** ~12 min. Base: turma piloto.
 
 ## Beats de tela, em ordem
 
