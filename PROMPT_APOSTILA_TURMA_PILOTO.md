@@ -1,10 +1,10 @@
 # Prompt pronto — Apostila de apoio da turma piloto (Claude Design)
 
-> **Revisão:** 08/09/2026. Substitui `PROMPT_APOSTILA_TURMA_ZERO.md`.
+> **Revisão:** 23/09/2026. Ajusta `PROMPT_APOSTILA_TURMA_PILOTO.md` (revisão de 08/09/2026).
 >
-> **O que mudou nesta versão:** "turma zero" passou a "turma piloto" em todo o material; a apostila passou a seguir a ordem A.U.L.A., com uma seção por bloco da sessão; entraram o mapa do método, o checklist de auditoria, a decisão de arquitetura de projetos, a entrevista reversa e o bloco de privacidade; o jargão técnico foi substituído por linguagem de professor; a extensão foi de 3–4 para 5–6 páginas A4.
+> **O que mudou nesta versão:** a Seção 2 ganhou uma caixa explicando onde cada arquivo do repositório-modelo entra de fato na ferramenta (instruções do projeto × arquivos da base de conhecimento) e apresentou o sexto arquivo, `05_ATA_DO_PROJETO`, que antes não aparecia em lugar nenhum da apostila; a Seção 6 (Auditar) ganhou a linha que fecha o ciclo, ligando o checklist ao registro no `05_ATA_DO_PROJETO`; a Seção 1 ganhou uma caixa sobre limite de uso em ferramenta paga, com o pedido pronto para adiantar a conversão do material bruto em `.md` (e o calendário também em `.csv`) antes da sessão. Motivo: os seis arquivos do repositório-modelo estavam prontos mas a apostila só descrevia o conceito, sem amarrar ao uso mecânico — parecia que os modelos tinham sido feitos à toa; e faltava prever o caso de quem usa ferramenta com limite de uso mais apertado que o Claude gratuito.
 >
-> **Se precisar segurar em 4 páginas:** o que sai é a Seção 7 (tabela de equivalência entre ferramentas) — ela serve mais depois da sessão do que durante, e pode ir junto do repositório-modelo por e-mail.
+> **Revisão anterior (08/09/2026):** "turma zero" passou a "turma piloto" em todo o material; a apostila passou a seguir a ordem A.U.L.A., com uma seção por bloco da sessão; entraram o mapa do método, o checklist de auditoria, a decisão de arquitetura de projetos, a entrevista reversa e o bloco de privacidade; o jargão técnico foi substituído por linguagem de professor; a extensão foi de 3–4 para 5–6 páginas A4.
 >
 > **Como usar:** cole tudo abaixo da linha no Claude Design. Anexe junto os arquivos `logo_horizontal.png`, `logo_sozinho.png`, `IDENTIDADE_VISUAL.md` e, se quiser que o texto saia com a redação exata em vez de resumida, os três materiais-fonte: `produto/principal/00_checklist_prerequisitos.md`, `produto/principal/01_tabela_equivalencia_ferramentas.md` e `produto/principal/03_bloco_diretriz_comentado.md`.
 >
@@ -12,7 +12,7 @@
 
 ---
 
-Monte uma apostila curta, em HTML/CSS, em português do Brasil, para a marca **Horatividade** — material de apoio impresso/PDF para os participantes da sessão ao vivo "turma piloto", onde acompanham a montagem do próprio repositório de planejamento com IA. Formato A4, pensado para impressão (`@media print`, quebra de página limpa entre seções), mas também legível na tela. Extensão: 5 a 6 páginas A4. É cola de consulta durante a sessão, não material de leitura — cada seção corresponde a um bloco da aula e precisa ser localizável de relance.
+Monte uma apostila em HTML/CSS, em português do Brasil, para a marca **Horatividade** — material de apoio impresso/PDF para os participantes da sessão ao vivo "turma piloto", onde acompanham a montagem do próprio repositório de planejamento com IA. Formato A4, pensado para impressão (`@media print`, quebra de página limpa entre seções), mas também legível na tela. Extensão: o quanto o conteúdo abaixo pedir — não corte conteúdo para caber num número de páginas. É cola de consulta durante a sessão, não material de leitura — cada seção corresponde a um bloco da aula e precisa ser localizável de relance.
 
 ## Marca e direção visual
 
@@ -62,6 +62,18 @@ Caixa de destaque com borda dourada, título "A primeira decisão da tarde":
 > **Certo:** Física · História · Química — as turmas vivem dentro do projeto, identificadas numa coluna do template.
 > **Errado:** 1ºA · 1ºB · 2ºA · 2ºB — cinco projetos gastos, e você fica sem projeto no meio do ano.
 
+Caixa de destaque com borda dourada, título "Se sua ferramenta tem limite de uso":
+
+> Ferramenta paga (ChatGPT, Gemini, Copilot) costuma ter limite de uso por sessão ou por dia. Pode não dar tempo de montar os cinco arquivos do zero numa tarde só — e não tem problema, dá pra continuar depois.
+>
+> Adiante o trabalho pesado antes da sessão: mande pra IA o material bruto que você já tem, do jeito que estiver (foto, PDF, texto solto), com este pedido, copiando e ajustando o nome do arquivo:
+>
+> "Organize isto em um arquivo `.md`, com o título `01_CALENDARIO`, mantendo todas as datas: [colar o material]." — troque `01_CALENDARIO` por `02_EMENTA`, `03_TURMAS` ou `04_TEMPLATE` conforme o material.
+>
+> Para o calendário, peça também: "gere uma segunda versão em `.csv`, uma linha por data." Facilita conferir e corrigir depois.
+>
+> Assim, se a sessão parar no meio — limite de uso, internet, o que for — você retoma com os arquivos já prontos pra revisar e subir, em vez de montar tudo de novo.
+
 **Seção 2 — A · Alimentar: os arquivos**
 
 Abrir com a definição do termo, em uma linha antes da tabela: "Repositório é a pasta que a IA lê antes de responder qualquer coisa."
@@ -71,6 +83,14 @@ Tabela de duas colunas (Camada / O que é) com Normativa, Operacional, Material,
 Abaixo da tabela, os cinco nomes de arquivo em sequência com seta entre eles:
 
 `00_DIRETRIZ` → `01_CALENDARIO` → `02_EMENTA` → `03_TURMAS` → `04_TEMPLATE`
+
+Caixa de destaque com borda dourada, título "Onde cada arquivo entra na sua ferramenta" — este é o ponto em que o repositório-modelo deixa de ser teoria e vira ação, então vale o destaque:
+
+- `00_DIRETRIZ` vai no campo **instruções do projeto** — não é arquivo anexado, é a regra permanente que vale para toda conversa.
+- `01_CALENDARIO`, `02_EMENTA`, `03_TURMAS` e `04_TEMPLATE` sobem como **arquivos**, na base de conhecimento do projeto.
+- Existe um sexto arquivo na pasta, `05_ATA_DO_PROJETO`. Você não preenche hoje: é onde registra, ao longo do ano, o que a IA errou e como você corrigiu — cada linha dali vira instrução nova na diretriz no ciclo seguinte.
+
+Linha de fecho: "O repositório-modelo que você recebe já vem com essa divisão pronta. É só preencher e subir cada arquivo no lugar certo."
 
 Caixa "Quando travar no perfil das turmas", com a frase em destaque, formatada para ser copiada literalmente:
 
@@ -126,6 +146,8 @@ Lista de checkbox, dez minutos no total, nesta ordem:
 Caixa de destaque, em corpo maior, como critério de fecho:
 
 > "Um colega da sua disciplina daria essa aula amanhã só com esse papel na mão?"
+
+Linha abaixo, corpo menor: "Toda correção que você fizer vale a pena registrar no `05_ATA_DO_PROJETO` — é o que evita o mesmo erro no bimestre seguinte, e é o único dos seis arquivos que você não termina hoje: ele cresce com o ano."
 
 **Seção 7 — Tabela de equivalência entre ferramentas**
 
