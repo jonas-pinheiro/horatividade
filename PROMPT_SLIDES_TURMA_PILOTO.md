@@ -21,46 +21,50 @@ Professor falando com professor — ver `CONTEXTO/VOZ.md` se anexado. Frases cur
 - Também precisa funcionar bem impresso/exportado em PDF como cópia de segurança (`@media print`, um slide por página).
 - Sem animação que dependa de clique duplo ou timing — Jonas está com atenção dividida entre falar, compartilhar tela e trocar de slide.
 
-## Estrutura do deck — 20 slides, na ordem
+## Estrutura do deck — 22 slides, na ordem
 
 Os blocos abaixo seguem exatamente os blocos de `producao/roteiro_turma_piloto.md`. Onde houver tabela ou lista, reproduzir como elemento visual (tabela real ou cards), não como parágrafo corrido.
 
 **1. Abertura**
 - Slide 1 — Capa: logo com slogan, "Turma piloto", subtítulo "Método A.U.L.A. — sessão ao vivo".
 - Slide 2 — "O contrato": "No fim desta tarde: o SEU planejamento encaminhado, na SUA disciplina, no formato da SUA escola." Abaixo, uma linha: "Abra agora a ferramenta de IA que você vai usar."
+- Slide 3 — Panorama do método, antes de entrar no Bloco 1: quatro linhas grandes, uma por letra — "**A**limentar — os arquivos que a IA precisa" · "**U**niformizar — o formato que a escola aceita" · "**L**igar — o calendário virando plano" · "**A**uditar — a assinatura continua sua". Abaixo, uma linha menor: "Hoje a gente faz os três primeiros ao vivo. O quarto — auditar — fecha a sessão." (conteúdo-base: `CONTEXTO/Horatividade_Estrutura_do_Curso.md`, seção Aula 1 e tabela da seção 3).
 
 **2. Bloco 1 — Alimentar I: os arquivos (~35 min)**
-- Slide 3 — Divisória de seção: "Bloco 1 · Alimentar I — os arquivos".
-- Slide 4 — Tabela "As cinco camadas do repositório": Normativa, Operacional, Material, Realidade, Formal — coluna com o nome da camada e coluna com um exemplo curto de cada (usar o conteúdo de `CONTEXTO/Horatividade_Estrutura_do_Curso.md`, seção Aula 2).
-- Slide 5 — Duas frases-chave lado a lado ou empilhadas: "O sumário vale mais que o livro." / "Nomeie e versione: `00_DIRETRIZ` → `04_TEMPLATE`."
-- Slide 6 — "Privacidade — o que não sobe": lista curta (nome, nota, laudo, contato de aluno; documento que não circula fora da escola). Fundo preto, texto branco, título dourado — é o único slide da sessão nesse estilo, para marcar peso do assunto.
+- Slide 4 — Divisória de seção: "Bloco 1 · Alimentar I — os arquivos".
+- Slide 5 — Tabela "As cinco camadas do repositório": Normativa, Operacional, Material, Realidade, Formal — coluna com o nome da camada e coluna com um exemplo curto de cada (usar o conteúdo de `CONTEXTO/Horatividade_Estrutura_do_Curso.md`, seção Aula 2).
+- Slide 6 — Duas frases-chave lado a lado ou empilhadas: "O sumário vale mais que o livro." / "Nomeie e versione: `00_DIRETRIZ` → `04_TEMPLATE`."
+- Slide 7 — "Privacidade — o que não sobe": lista curta (nome, nota, laudo, contato de aluno; documento que não circula fora da escola). Fundo preto, texto branco, título dourado — é o único slide da sessão nesse estilo, para marcar peso do assunto.
 
 **3. Bloco 2 — Alimentar II: a diretriz pedagógica (~25 min)**
-- Slide 7 — Divisória de seção: "Bloco 2 · Alimentar II — a diretriz pedagógica".
-- Slide 8 — Comparação em duas colunas: "Arquivo diz o que existe" × "Instrução diz como pensar".
-- Slide 9 — Lista numerada, as seis partes do bloco de diretriz: Papel e escopo · Fontes de verdade e hierarquia · Referencial pedagógico declarado · Nomenclatura obrigatória · Restrições invioláveis · Comportamento na falta de informação (nomes exatos de `produto/principal/03_bloco_diretriz_comentado.md`).
-- Slide 10 — Slide de citação, texto grande centralizado: "As colunas do template são a gramática pedagógica da instituição."
+- Slide 8 — Divisória de seção: "Bloco 2 · Alimentar II — a diretriz pedagógica".
+- Slide 9 — Comparação em duas colunas: "Arquivo diz o que existe" × "Instrução diz como pensar".
+- Slide 10 — Lista numerada, as seis partes do bloco de diretriz: Papel e escopo · Fontes de verdade e hierarquia · Referencial pedagógico declarado · Nomenclatura obrigatória · Restrições invioláveis · Comportamento na falta de informação (nomes exatos de `produto/principal/03_bloco_diretriz_comentado.md`).
+- Slide 11 — Slide de citação, texto grande centralizado: "As colunas do template são a gramática pedagógica da instituição."
 
 **Pausa**
-- Slide 11 — "Pausa — 10 min", minimalista, só texto centralizado.
+- Slide 12 — "Pausa — 10 min", minimalista, só texto centralizado.
 
 **4. Bloco 3 — Uniformizar (~25 min)**
-- Slide 12 — Divisória de seção: "Bloco 3 · Uniformizar — o formato como regra".
-- Slide 13 — Diagrama simples (três caixas conectadas por seta a partir de uma caixa central "Conteúdo"): Conteúdo → Word/PDF (coordenação) · Planilha (sistema) · Markdown (colar direto). Legenda: "Gera-se uma vez. Renderiza-se quantas vezes precisar."
-- Slide 14 — Três passos do template reverso, em sequência numerada: "1. Sobe o template vazio → 2. Corrige a leitura da IA → 3. Salva como `04_TEMPLATE.md`, regra permanente".
+- Slide 13 — Divisória de seção: "Bloco 3 · Uniformizar — o formato como regra".
+- Slide 14 — Diagrama simples (três caixas conectadas por seta a partir de uma caixa central "Conteúdo"): Conteúdo → Word/PDF (coordenação) · Planilha (sistema) · Markdown (colar direto). Legenda: "Gera-se uma vez. Renderiza-se quantas vezes precisar."
+- Slide 15 — Três passos do template reverso, em sequência numerada: "1. Sobe o template vazio → 2. Corrige a leitura da IA → 3. Salva como `04_TEMPLATE.md`, regra permanente".
 
 **5. Bloco 4 — Ligar I: o mapa do ano (~35 min)**
-- Slide 15 — Divisória de seção: "Bloco 4 · Ligar I — o mapa do ano e o planejamento".
-- Slide 16 — Três etapas em sequência com um checkpoint marcado entre elas: "Etapa 1 — Mapa do ano" → *(checkpoint: aprovar antes de seguir)* → "Etapa 2 — Distribuição" → *(checkpoint: aprovar antes de seguir)* → "Etapa 3 — Planejamento no formato".
-- Slide 17 — Slide de citação: "Quase sempre é um número menor do que você supunha."
+- Slide 16 — Divisória de seção: "Bloco 4 · Ligar I — o mapa do ano e o planejamento".
+- Slide 17 — Três etapas em sequência com um checkpoint marcado entre elas: "Etapa 1 — Mapa do ano" → *(checkpoint: aprovar antes de seguir)* → "Etapa 2 — Distribuição" → *(checkpoint: aprovar antes de seguir)* → "Etapa 3 — Planejamento no formato".
+- Slide 18 — Slide de citação: "Quase sempre é um número menor do que você supunha."
 
 **6. Bloco 5 — Ligar II: planos em lote (~15 min)**
-- Slide 18 — Divisória de seção: "Bloco 5 · Ligar II — planos de aula em lote".
-- Slide 19 — Texto grande centralizado: "Cada linha da tabela é um plano de aula esperando para nascer." Abaixo, menor: "Todo plano cita a linha de origem — é o que impede a aula bonita que não tem nada a ver com o que foi entregue à coordenação."
+- Slide 19 — Divisória de seção: "Bloco 5 · Ligar II — planos de aula em lote".
+- Slide 20 — Texto grande centralizado: "Cada linha da tabela é um plano de aula esperando para nascer." Abaixo, menor: "Todo plano cita a linha de origem — é o que impede a aula bonita que não tem nada a ver com o que foi entregue à coordenação."
 
 **7. Fechamento**
-- Slide 20 — A métrica do curso, texto grande: "Ao fim: o planejamento estava pronto e no formato da escola — sim ou não?" Abaixo, menor: "Se sim, me conta em 30 segundos — é o seu depoimento." Fecha com logo horizontal pequeno e slogan.
+- Slide 21 — "Auditar — o A final", fechando o método antes da métrica: pergunta em destaque "Um colega da sua disciplina conseguiria dar essa aula amanhã só com esse papel na mão?" Abaixo, menor: "A IA não decidiu nada pedagógico. Ela redigitou, distribuiu e formatou. A escolha continua sua — e a assinatura também." (conteúdo-base: `CONTEXTO/Horatividade_Estrutura_do_Curso.md`, seção Aula 7 — este passo não é praticado ao vivo na sessão, só apresentado como fechamento conceitual do método).
+- Slide 22 — A métrica do curso, texto grande: "Ao fim: o planejamento estava pronto e no formato da escola — sim ou não?" Abaixo, menor: "Se sim, me conta em 30 segundos — é o seu depoimento." Fecha com logo horizontal pequeno e slogan.
 
 ## Detalhe de execução
 
-Nos slides de "divisória de seção" (3, 7, 12, 15, 18), usar numeração grande em dourado ("Bloco 1", "Bloco 2"...) como elemento gráfico dominante — é o que dá ao professor, olhando de relance durante a fala, a noção imediata de onde está na sessão.
+Nos slides de "divisória de seção" (4, 8, 13, 16, 19), usar numeração grande em dourado ("Bloco 1", "Bloco 2"...) como elemento gráfico dominante — é o que dá ao professor, olhando de relance durante a fala, a noção imediata de onde está na sessão.
+
+Os slides 3 e 21 (panorama do A.U.L.A. e o A final de Auditar) usam o mesmo tratamento visual dos slides de citação — texto grande, sem tabela, sem card — para marcar que são momentos de conceito do método, não conteúdo de bloco.

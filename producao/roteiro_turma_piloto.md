@@ -20,14 +20,14 @@
 
 | Bloco | Tempo | Conteúdo |
 |---|---|---|
-| Abertura | 10 min | O contrato: o que cada um terá no fim; pedir que todos abram a ferramenta |
+| Abertura | 10 min | O contrato: o que cada um terá no fim; pedir que todos abram a ferramenta; panorama rápido do método A.U.L.A. (o que cada letra entrega) |
 | Bloco 1 (Aula 2) | 35 min | Montar o repositório: projeto, cinco arquivos, entrevista reversa ao vivo com um voluntário |
 | Bloco 2 (Aula 3) | 25 min | Diretriz de seis partes; arqueologia do template de cada um ("que colunas o seu pede?") |
 | Pausa | 10 min | — |
 | Bloco 3 (Aula 4) | 25 min | Template reverso com o template de um voluntário (conferir blindagem antes de projetar) |
 | Bloco 4 (Aula 5) | 35 min | **Gravação candidata a aula:** mapa do ano → distribuição → planejamento gerado, com checkpoints |
 | Bloco 5 (Aula 6) | 15 min | Planos em lote derivados do planejamento |
-| Fechamento | 15 min | Métrica binária com cada um; pedido de depoimento; envio do repositório-modelo |
+| Fechamento | 15 min | Menção ao A final (Auditar) como fechamento conceitual do método; métrica binária com cada um; pedido de depoimento; envio do repositório-modelo |
 
 ## Cuidados específicos
 
