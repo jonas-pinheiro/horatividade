@@ -9,3 +9,7 @@ contexto/termos_proibidos.txt
 __pycache__/
 .DS_Store
 Thumbs.db
+
+# Gravações e chats de sessão real — nomes de participantes reais, não sobem para repo público
+transcricao-aula-horatividade.srt
+meeting_saved_new_chat.txt

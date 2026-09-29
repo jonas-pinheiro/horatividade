@@ -7,6 +7,8 @@ Para que a IA usa: no ciclo seguinte, cada item daqui vira instrução na diretr
 
 Uma linha por correção, na hora em que ela acontecer. Não confie na memória de fim de bimestre.
 
+O template.md não foi suficiente para que a IA me entregasse o planejamento já no modelo que a coordenação demanda.
+
 | Data | O que a IA errou | O que eu corrigi | Virou instrução? |
 |---|---|---|---|
 | [...] | [ex.: propôs atividade com laboratório fora da janela de agendamento] | [ex.: troquei por demonstração em sala] | [sim → restrição na diretriz / ainda não] |
