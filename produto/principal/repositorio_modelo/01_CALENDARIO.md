@@ -23,4 +23,10 @@ Para que a IA usa: é a fonte da conta de aulas; vence qualquer outro arquivo em
 |---|---|---|
 | [...] | [...] | [...] |
 
+## Datas de aula por turma (já cruzadas com feriados, recessos e semana de avaliação)
+| Turma | 1º bimestre | 2º bimestre | 3º bimestre | 4º bimestre | Total ano |
+|---|---|---|---|---|---|
+| [...] | [dd/mm, dd/mm, ...] | [...] | [...] | [...] | [...] |
+
 > Dica: se o calendário da escola só existe em imagem, suba a imagem na conversa, peça a transcrição em tabela e confira antes de colar aqui.
+> Ao pedir este arquivo para a IA, peça também o total de aulas por turma e por bimestre — é o número que decide quanto conteúdo cabe no ano, e é ele que o `02_EMENTA` e o planejamento vão respeitar.

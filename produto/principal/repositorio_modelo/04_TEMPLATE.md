@@ -24,3 +24,5 @@ Para que a IA usa: é a regra de formato de toda entrega; vence preferências su
 
 ## Regras de formato
 [Uma linha por aula ou por semana? Datas em que formato? Regras de nomenclatura? O que a coordenação devolve corrigido todo ano?]
+
+> A escola pede um documento para o planejamento anual e outro, diferente, para o plano de aula? Faça um arquivo para cada, em conversas separadas: `04_TEMPLATE_PLANEJAMENTO.md` e `04_TEMPLATE_PLANO_DE_AULA.md`.
