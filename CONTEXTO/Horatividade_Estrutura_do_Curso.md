@@ -117,7 +117,9 @@ Sem corte entre os dois. É a prova.
 
 **Entrevista reversa.** O professor trava na hora de descrever o perfil das turmas. A saída é inverter: peça à IA que **entreviste você** antes de gerar qualquer coisa — "me faça as perguntas que faltam para montar o perfil das minhas turmas". Responde em dois minutos falando, e a resposta vira o arquivo. Técnica que resolve a paralisia da página em branco e que, sozinha, já justifica o curso para muita gente.
 
-**Nomear e versionar.** Padrão simples de nomes (`00_DIRETRIZ`, `01_CALENDARIO`, `02_EMENTA`, `03_TURMAS`, `04_TEMPLATE`) para que você possa dizer "use o 01" e para que o repositório continue legível no ano que vem. Parece detalhe; é o que separa repositório de pasta de downloads.
+**Nomear e versionar.** Padrão simples de nomes (`00_DIRETRIZ`, `01_CALENDARIO`, `02_EMENTA`, `03_TURMAS`, `04_TEMPLATE`, mais `05_ATA_DO_PROJETO` na Aula 8 e `06_REFERENCIAL` opcional para quem precisa de código de habilidade oficial) para que você possa dizer "use o 01" e para que o repositório continue legível no ano que vem. Parece detalhe; é o que separa repositório de pasta de downloads.
+
+**A numeração não é a ordem de preenchimento.** A ordem real, testada na turma piloto e é a que a Apostila do aluno ensina passo a passo: primeiro `00_DIRETRIZ`, `02_EMENTA` e `03_TURMAS` (Alimentar, aulas 2 e 3), depois `04_TEMPLATE` (Uniformizar, aula 4), só então `01_CALENDARIO` e o planejamento (Ligar, aulas 5 e 6) — o calendário do ano que vem costuma ser o último dado a chegar.
 
 ### Curadoria como regra — por que o repositório é enxuto
 
@@ -181,7 +183,7 @@ Ensinado como estrutura de seis partes, para o professor escrever a **dele**:
 2. **Fontes de verdade e hierarquia** — qual arquivo manda quando dois se contradizem. *(Calendário vence apostila. Template vence preferência minha.)*
 3. **Referencial pedagógico declarado** — o núcleo. Qual taxonomia/matriz, com os verbos e níveis que a escola aceita.
 4. **Nomenclatura obrigatória** — as palavras exatas que a coordenação usa, porque sinônimo elegante volta corrigido.
-5. **Restrições invioláveis** — nunca inventar código de habilidade; nunca propor recurso que não existe na escola; nunca exceder o número real de aulas; sempre sinalizar quando estiver inferindo.
+5. **Restrições invioláveis** — nunca inventar código de habilidade; nunca propor recurso que não existe na escola; nunca exceder o número real de aulas; sempre sinalizar quando estiver inferindo. Quem precisa de código de habilidade oficial (BNCC, currículo estadual) monta o `06_REFERENCIAL` — o recorte do documento oficial, copiado sem resumir — em vez de deixar a IA escolher o código pela palavra-chave.
 6. **Comportamento na falta de informação** — perguntar, não preencher. Regra única que elimina metade dos erros.
 
 ### Referenciais como módulos plugáveis
