@@ -6,6 +6,8 @@ Este é o texto que vai no campo **instruções do projeto** (nomes por ferramen
 
 Copie o bloco inteiro, troque o que está entre colchetes, apague o que não se aplicar. Os comentários (linhas "→") existem para você entender o que está trocando — não os cole no projeto.
 
+> **Dois caminhos para o mesmo arquivo.** A Apostila do aluno (Passo A1) ensina o caminho rápido: entregar as orientações da coordenação para a IA e deixar que ela preencha o `00_DIRETRIZ.md`, perguntando o que faltar. Este material é o caminho manual — para quem quer entender parte por parte o que está escrevendo, ou ajustar um trecho sem depender da IA para reler tudo. Os dois terminam no mesmo arquivo, com a mesma estrutura de seis partes.
+
 ---
 
 ## PARTE 1 — Papel e escopo
@@ -96,4 +98,4 @@ minha aprovação a cada etapa antes de continuar.
 3. Teste com a métrica da Aula 3: peça o mesmo objetivo com dois referenciais diferentes na Parte 3. Se a estrutura e o vocabulário da saída mudarem, a diretriz está mandando.
 
 ---
-*Horatividade — método A.U.L.A. · v0.1.0 · agosto de 2026*
+*Horatividade — método A.U.L.A. · v0.2.0 · setembro de 2026*

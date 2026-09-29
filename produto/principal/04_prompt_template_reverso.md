@@ -2,26 +2,29 @@
 
 # Prompt do template reverso — o formato da escola como regra permanente
 
-Em vez de descrever o template da coordenação para a IA (e errar detalhes), você sobe o arquivo vazio e pede que **ela** o descreva de volta. Você corrige a leitura, salva a descrição corrigida como arquivo, e o formato vira regra do projeto — não pedido repetido.
+Em vez de descrever o template da coordenação para a IA (e errar detalhes), você sobe o arquivo vazio, junto com o modelo `04_TEMPLATE.md`, e pede que **ela** preencha o modelo a partir do que leu. Você confere e corrige, e o formato vira regra do projeto — não pedido repetido.
 
-## Passo 1 — Suba o template vazio e cole este prompt
+## Passo 1 — Anexe o modelo `04_TEMPLATE.md` e o template vazio da coordenação, e cole este prompt
 
-> Este é o template de planejamento que a minha coordenação exige, vazio. Descreva-o de volta para mim, por escrito: quais campos tem o cabeçalho; quantas colunas tem a tabela e em que ordem; o que cada coluna espera receber; quais valores parecem ser de lista fechada; o que se repete por linha; qualquer regra de formato que você consiga identificar (fonte de datas, unidades, numeração). Onde você estiver deduzindo em vez de lendo, marque com [DEDUZIDO]. Não preencha nada — só descreva.
+> Analise o modelo de planejamento que a coordenação me passou e preencha o arquivo modelo 04_TEMPLATE.md, para que tudo o que eu gerar depois saia exatamente igual a esse modelo. Onde você estiver deduzindo em vez de lendo, marque com [DEDUZIDO]. Me entregue o arquivo .md preenchido.
 
-## Passo 2 — Corrija a leitura
+Se a escola pede dois documentos diferentes (o planejamento anual e o plano de aula, por exemplo), faça um de cada vez, em conversas separadas, e salve com nomes diferentes: `04_TEMPLATE_PLANEJAMENTO.md` e `04_TEMPLATE_PLANO_DE_AULA.md`.
 
-Compare a descrição com o template real, item por item. Os erros típicos:
+## Passo 2 — Confira a leitura
+
+Abra o arquivo que ela devolveu ao lado do template real, item por item. Os erros típicos:
 
 - Coluna que ela leu como texto livre mas é lista fechada — liste os valores aceitos você mesmo
 - Campo de cabeçalho ignorado
 - Regra implícita que só você conhece ("a coordenação quer uma linha por aula, não por semana")
 - Nomenclatura aproximada em vez de literal
+- Algum `[DEDUZIDO]` que devia ter sido lido, não deduzido
 
-Responda apontando as correções. Peça a descrição final consolidada.
+Se algo estiver errado, corrija na própria conversa, em linguagem normal ("a coluna Metodologia só aceita estes valores: ...") e peça o arquivo de novo.
 
 ## Passo 3 — Salve como arquivo permanente
 
-Salve a descrição corrigida como **`04_TEMPLATE.md`** na base de conhecimento do projeto. Pronto: toda geração futura já sai no formato aceito, sem você descrever nada de novo.
+Salve a versão corrigida como **`04_TEMPLATE.md`** na base de conhecimento do projeto. **Guarde também o arquivo original da coordenação** — você vai precisar dele no Ligar, se o formato final sair diferente do modelo. Pronto: toda geração futura já sai no formato aceito, sem você descrever nada de novo.
 
 ## Teste rápido (métrica da Aula 4)
 
@@ -31,7 +34,8 @@ Peça uma linha de exemplo preenchida e abra ao lado do template real. Mesmas co
 
 - Funciona com .docx, planilha, PDF e até foto de formulário impresso. O que importa é a descrição textual final, que é o que a IA usa dali em diante.
 - Sistema de gestão sem arquivo para subir: tire um print da tela de preenchimento e siga os mesmos passos.
-- Se o seu plano não lê o arquivo enviado, descreva as colunas você mesmo no passo 1 e siga do passo 2 em diante — o produto final é o mesmo arquivo `04_TEMPLATE.md`.
+- Se o seu plano não lê o arquivo enviado, descreva as colunas você mesmo, em linguagem normal, e peça para ela organizar no formato do modelo — o produto final é o mesmo arquivo `04_TEMPLATE.md`.
+- Esta é a etapa mais pesada do plano gratuito: ler Word e planilha consome muito do limite de uso. Faça numa conversa só para ela, no começo de uma janela de uso.
 
 ---
-*Horatividade — método A.U.L.A. · v0.1.0 · agosto de 2026*
+*Horatividade — método A.U.L.A. · v0.2.0 · setembro de 2026*

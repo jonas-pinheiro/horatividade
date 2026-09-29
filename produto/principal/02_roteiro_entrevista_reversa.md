@@ -4,9 +4,9 @@
 
 Descrever as próprias turmas por escrito trava qualquer professor. A saída é inverter: a IA pergunta, você responde falando, a resposta vira arquivo.
 
-## Passo 1 — Cole este prompt na conversa do seu projeto
+## Passo 1 — Anexe o modelo `03_TURMAS.md` e cole este prompt
 
-> Preciso montar o arquivo de perfil das minhas turmas para este repositório. Não gere nada ainda. Primeiro me entreviste: faça as perguntas necessárias, uma de cada vez, para levantar o que você precisa saber sobre cada turma. Importante: nada de dados de alunos individuais — o perfil é da turma como grupo. Quando tiver informação suficiente, monte o arquivo em markdown com uma seção por turma e me mostre para eu aprovar.
+> Quero preencher o arquivo modelo 03_TURMAS.md. Não gere nada ainda. Primeiro me entreviste sobre o perfil das minhas turmas, uma pergunta de cada vez. Nada de dados individuais de alunos: o perfil é da turma como grupo. Quando tiver informação suficiente, me entregue o arquivo .md preenchido.
 
 ## Passo 2 — Responda como numa conversa de corredor
 
@@ -24,6 +24,10 @@ Uma boa entrevista cobre estes pontos. Se a IA encerrar antes, cole os que falta
 - O que costuma funcionar bem com cada turma? O que costuma fracassar?
 - Alguma turma tem ritmo claramente diferente das outras?
 
+Se a entrevista se estender demais, encerre:
+
+> Já tem informação suficiente. Pode gerar o arquivo.
+
 ## Passo 3 — O que fazer com a resposta
 
 1. Leia o arquivo que ela montou. Corrija exageros e preencha o que ficou vago.
@@ -35,4 +39,4 @@ Uma boa entrevista cobre estes pontos. Se a IA encerrar antes, cole os que falta
 A entrevista reversa serve para qualquer arquivo que você trave para escrever: a ementa que não existe, a descrição do template, o próprio bloco de diretriz. "Me entreviste antes de gerar" é a frase que destrava.
 
 ---
-*Horatividade — método A.U.L.A. · v0.1.0 · agosto de 2026*
+*Horatividade — método A.U.L.A. · v0.2.0 · setembro de 2026*
