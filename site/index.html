@@ -1,0 +1,702 @@
+<!doctype html>
+<!--
+  HORATIVIDADE — Landing page de vendas
+  Estrutura: Vídeo de Venda de Valor (VTSD M05, Aula 08) + seções de página (M05, Aula 03).
+  Ordem: 1 Promessa (QFD) → 2 Para quem é → 3 Prova → 4 História → 5 Jeito errado vs. certo
+         → 6 Explicação da oferta → 7 CTA emocional → FAQ (quebra de objeção fica no FAQ, M05 A06).
+
+  CHAVES LIGA/DESLIGA (no <html> abaixo):
+    data-vsl="on|off"           → bloco de vídeo no topo. "off" some sem deixar buraco.
+    data-depoimentos="on|off"   → seção de depoimentos da Turma Pioneira.
+-->
+<html lang="pt-BR" data-vsl="off" data-depoimentos="off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Horatividade — o planejamento do seu ano inteiro em uma tarde</title>
+<meta name="description" content="Método A.U.L.A. para professores de anos finais e ensino médio: monte uma vez o contexto da sua escola e derive dele o planejamento anual e os planos de aula, no formato da coordenação.">
+<meta name="theme-color" content="#FFFFFF">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://horatividade.com.br/">
+<meta property="og:title" content="O planejamento do seu ano inteiro em uma tarde">
+<meta property="og:description" content="Método A.U.L.A. para professores de anos finais e ensino médio. Funciona no plano gratuito do Claude.">
+<meta property="og:image" content="OG_IMAGE_URL">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='8' fill='%23060606'/%3E%3Cpath d='M30 76 50 24 70 76M37 58h26' fill='none' stroke='%23CE9631' stroke-width='10' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+<!-- ============ META PIXEL (novo, exclusivo do Horatividade) ============
+     Troque META_PIXEL_ID pelo ID do pixel novo. Enquanto estiver com o texto
+     "META_PIXEL_ID", o pixel não carrega e nada quebra. NÃO reutilize o pixel do ApF. -->
+<script>
+  window.META_PIXEL_ID = 'META_PIXEL_ID';
+  if (/^\d{10,20}$/.test(window.META_PIXEL_ID)) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', window.META_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+</script>
+<!-- noscript do pixel: descomente e troque o ID
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"></noscript>
+-->
+<!-- ===================================================================== -->
+
+<style>
+:root{
+  --preto:#060606;--ouro:#CE9631;--branco:#FFFFFF;
+  --cinza-700:#4A4A4A;--cinza-500:#8A8A8A;--cinza-200:#E5E5E5;--cinza-100:#F2F2F2;--cinza-050:#FAFAFA;
+  --ouro-hover:#B98428;--ouro-press:#A9781F;--ouro-tint:#F7EEDF;
+  --fonte:'DM Sans','Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --i-x:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E");--i-check:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  --i-check-branco:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");--i-x-cinza:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A4A4A' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18M6 6l12 12'/%3E%3C/svg%3E");
+  --i-mais:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E");--i-menos:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3C/svg%3E");
+  --ease:cubic-bezier(.2,0,.2,1);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--branco);color:var(--preto);font-family:var(--fonte);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;display:block}
+a{color:var(--preto);text-decoration:underline;text-decoration-color:var(--ouro);text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:var(--ouro-press)}
+:focus-visible{outline:3px solid var(--preto);outline-offset:3px;border-radius:2px}
+.gratis :focus-visible,.final :focus-visible{outline-color:var(--branco)}
+.wrap{width:min(100% - 40px, 680px);margin-inline:auto}
+.wide{width:min(100% - 32px, 1040px);margin-inline:auto}
+h1,h2,h3{font-family:var(--fonte);font-weight:700;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.25rem, 9.4vw, 3.75rem);line-height:1.04;letter-spacing:-.025em}
+h2{font-size:clamp(1.75rem, 6.4vw, 2.5rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:.6em}
+h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.01em}
+p{margin:0 0 1em;text-wrap:pretty}
+.lead{font-size:1.1875rem;line-height:1.5}
+.muted{color:var(--cinza-700)}
+section{padding:64px 0}
+@media (min-width:820px){section{padding:96px 0}}
+.divisa{border-top:1px solid var(--cinza-200)}
+/* ---------- marca ---------- */
+.topo{padding:18px 0 0;padding-top:calc(18px + env(safe-area-inset-top,0px));display:flex;align-items:center;min-height:48px}
+.marca{font-size:1.125rem;font-weight:700;color:var(--preto);text-decoration:none;text-transform:uppercase;letter-spacing:.06em;line-height:1;padding:12px 0}
+.marca b{font-weight:700;color:var(--ouro)}
+/* ---------- hero ---------- */
+.hero{padding-bottom:56px;background:var(--branco);border-bottom:1px solid var(--cinza-200)}
+.filtro{display:inline-block;margin:20px 0 18px;padding:8px 12px;background:var(--preto);color:var(--branco);font-weight:500;font-size:.9375rem;line-height:1.4;border-radius:4px}
+.hero h1{margin-bottom:.45em}
+.hero .sub{max-width:34em}
+.linha-marca{font-weight:700;font-size:1.0625rem;color:var(--preto);margin:6px 0 26px}
+.linha-marca::before{content:"";display:block;width:32px;height:3px;background:var(--ouro);margin-bottom:10px}
+.anti{font-size:.9375rem;color:var(--cinza-700);margin-top:18px;max-width:34em}
+/* vídeo opcional */
+.vsl{margin:4px 0 28px}
+html[data-vsl="off"] .vsl{display:none}
+.vsl-caixa{position:relative;aspect-ratio:16/9;width:100%;border:1.5px dashed var(--cinza-500);border-radius:6px;background:var(--cinza-050);display:grid;place-items:center;text-align:center;padding:16px;color:var(--cinza-700);font-weight:700}
+.vsl-caixa small{font-weight:400}
+.vsl-caixa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:6px}
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;background:var(--ouro);color:var(--preto);font-family:var(--fonte);font-weight:700;font-size:1.125rem;line-height:1.25;padding:16px 24px;border-radius:4px;min-height:56px;transition:background-color 120ms var(--ease)}
+.btn:hover{background:var(--ouro-hover);color:var(--preto)}
+.btn:active{background:var(--ouro-press);transform:translateY(1px)}
+.btn-bloco{display:flex;width:100%}
+@media (min-width:560px){.btn-bloco{display:inline-flex;width:auto}}
+.sob-botao{font-size:.9375rem;color:var(--cinza-700);margin-top:12px}
+/* folha de planejamento (visual do hero) */
+.folha-plan{margin:40px 0 0;background:var(--branco);border:1px solid var(--cinza-200);border-top:4px solid var(--ouro);border-radius:6px;box-shadow:0 2px 6px rgba(6,6,6,.07);overflow:hidden;max-width:560px}
+.folha-plan header{padding:16px 16px 14px;border-bottom:1px solid var(--preto)}
+.folha-plan header strong{display:block;font-size:1.0625rem;line-height:1.3}
+.folha-plan header span{font-size:.875rem;color:var(--cinza-700)}
+.folha-plan table{width:100%;border-collapse:collapse;font-size:.9375rem}
+.folha-plan th{text-align:left;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--cinza-700);font-weight:500;padding:10px 12px 8px;border-bottom:1px solid var(--cinza-200);background:var(--cinza-050)}
+.folha-plan td{padding:11px 12px;border-bottom:1px solid var(--cinza-200)}
+.folha-plan tr:last-child td{border-bottom:0}
+.folha-plan td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.visto{white-space:nowrap;font-size:.8125rem;font-weight:700;color:var(--preto)}
+.folha-plan td.visto{padding-left:18px;background:linear-gradient(var(--ouro-tint),var(--ouro-tint)) 10px 50%/96px 26px no-repeat}
+.legenda{font-size:.875rem;color:var(--cinza-700);margin-top:12px}
+/* ---------- para quem ---------- */
+.lista{list-style:none;padding:0;margin:0 0 8px}
+.lista li{position:relative;padding:0 0 0 36px;margin-bottom:16px}
+.lista li::before{content:"";position:absolute;left:0;top:3px;width:22px;height:22px;background:var(--preto);-webkit-mask:var(--i-check) center/18px no-repeat;mask:var(--i-check) center/18px no-repeat}
+.nao li::before{background:var(--cinza-500);-webkit-mask-image:var(--i-x);mask-image:var(--i-x)}
+.nao{color:var(--cinza-700)}
+.bloco-nao{margin-top:36px;padding-top:28px;border-top:1px solid var(--cinza-200)}
+/* ---------- demonstração ---------- */
+.pedido{background:var(--preto);color:var(--branco);border-radius:6px;padding:18px 20px;margin:8px 0 22px;font-size:1.0625rem;font-weight:500}
+.pedido small{display:block;color:#C9C9C9;font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.duas{display:grid;gap:18px}
+@media (min-width:820px){.duas{grid-template-columns:1fr 1fr;gap:24px}}
+.resp{border-radius:6px;padding:24px 22px}
+.resp h3{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.resp h3::before{content:"";flex:none;width:30px;height:30px;border-radius:4px;background-position:center;background-size:18px;background-repeat:no-repeat}
+.resp dl{margin:0;font-size:1rem}
+.resp dt{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cinza-700);margin-top:18px}
+.resp dd{margin:2px 0 0}
+.errado{background:var(--cinza-050);border:1px solid var(--cinza-200)}
+.errado h3::before{border:1.5px solid var(--cinza-500);background-image:var(--i-x-cinza)}
+.certo{background:var(--branco);border:2px solid var(--preto)}
+.certo h3::before{background-color:var(--preto);background-image:var(--i-check-branco)}
+.risco{text-decoration:underline wavy var(--ouro);text-decoration-thickness:1.5px;text-underline-offset:5px;text-decoration-skip-ink:none}
+.nota{display:block;color:var(--preto);font-size:.875rem;font-weight:700;line-height:1.45;margin-top:8px;padding-left:10px;border-left:2px solid var(--ouro)}
+/* ---------- depoimentos ---------- */
+html[data-depoimentos="off"] #depoimentos{display:none}
+.depos{display:grid;gap:18px;margin-top:8px}
+@media (min-width:820px){.depos{grid-template-columns:repeat(3,1fr)}}
+.depo{margin:0;background:var(--branco);border:1.5px dashed var(--cinza-500);border-radius:6px;padding:18px}
+.depo .midia{aspect-ratio:4/5;background:var(--cinza-100);border-radius:4px;display:grid;place-items:center;text-align:center;color:var(--cinza-700);font-weight:700;font-size:.875rem;letter-spacing:.04em;padding:12px;margin-bottom:16px}
+.depo blockquote{margin:0 0 12px}
+.depo cite{font-style:normal;font-weight:700;display:block}
+.depo cite span{font-weight:400;color:var(--cinza-700)}
+/* ---------- quem ensina ---------- */
+.autor{display:grid;gap:24px;align-items:start}
+@media (min-width:720px){.autor{grid-template-columns:200px 1fr;gap:36px}}
+.foto{aspect-ratio:1;border-radius:6px;background:var(--cinza-100);border:1.5px dashed var(--cinza-500);display:grid;place-items:center;text-align:center;color:var(--cinza-700);font-weight:700;font-size:.875rem;letter-spacing:.04em;padding:12px;max-width:200px}
+.credencial{font-weight:700;font-size:1.1875rem;line-height:1.45}
+/* ---------- jeito errado vs certo ---------- */
+.analogia{background:var(--cinza-050);border:1px solid var(--cinza-200);border-radius:6px;padding:22px;margin:28px 0 40px}
+.erros{display:grid;gap:16px;margin-top:20px}
+.erro{background:var(--branco);border:1px solid var(--cinza-200);border-radius:6px;overflow:hidden}
+.erro h3{padding:14px 18px;background:var(--preto);color:var(--branco);font-size:1.0625rem}
+.erro .lados{display:grid}
+@media (min-width:720px){.erro .lados{grid-template-columns:1fr 1fr}}
+.erro .lados div{padding:16px 18px}
+.erro .hoje{background:var(--cinza-100);color:var(--cinza-700)}
+.erro .metodo{background:var(--branco);color:var(--preto)}
+.erro .rot{display:flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.erro .rot::before{content:"";flex:none;width:20px;height:20px;border-radius:3px;background-position:center;background-size:14px;background-repeat:no-repeat}
+.hoje .rot{color:var(--cinza-700)}
+.hoje .rot::before{border:1.5px solid var(--cinza-500);background-image:var(--i-x-cinza)}
+.metodo .rot{color:var(--preto)}
+.metodo .rot::before{background-color:var(--ouro);background-image:var(--i-check)}
+/* A.U.L.A. */
+.aula-lista{list-style:none;padding:0;margin:32px 0 0}
+.aula-lista li{position:relative;display:grid;grid-template-columns:64px 1fr;gap:20px;padding:0 0 32px}
+.aula-lista li:not(:last-child)::after{content:"";position:absolute;left:31px;top:72px;bottom:8px;width:2px;background:var(--preto)}
+.aula-lista li:nth-child(3)::after{background:repeating-linear-gradient(var(--ouro) 0 4px,transparent 4px 9px)}
+.letra{font-weight:700;font-size:2.25rem;line-height:1;width:64px;height:64px;display:grid;place-items:center;border-radius:4px;background:var(--preto);color:var(--branco)}
+.aula-lista li.auditar{padding-bottom:0}
+.aula-lista li.auditar .letra{background:var(--ouro);color:var(--preto)}
+.aula-lista li.auditar > div{padding:14px 18px 16px;border:2px solid var(--preto);border-radius:6px}
+.aula-lista h3{margin:16px 0 6px;font-size:1.25rem}
+.aula-lista li.auditar h3{margin-top:0}
+.aula-lista p{margin:0}
+.carimbo{margin-top:40px;padding:24px 22px;border:2px solid var(--preto);border-top:6px solid var(--ouro);border-radius:6px;background:var(--branco)}
+.carimbo p:first-child{font-weight:700;font-size:1.375rem;line-height:1.25;letter-spacing:-.01em;color:var(--preto)}
+.carimbo p:last-child{margin:0}
+/* SaaS */
+.contra{display:grid;gap:14px;margin-top:24px}
+@media (min-width:720px){.contra{grid-template-columns:1fr 1fr}}
+.contra div{background:var(--branco);border:1px solid var(--cinza-200);border-radius:6px;padding:20px}
+.contra h3{font-size:1.125rem;margin-bottom:6px}
+.contra p{margin:0;color:var(--cinza-700)}
+/* Claude grátis */
+.gratis{background:var(--preto);color:#C9C9C9}
+.gratis h2,.gratis .lead{color:var(--branco)}
+.gratis a{color:var(--branco)}
+.gratis .fecho{font-weight:700;font-size:1.1875rem;line-height:1.4;color:var(--branco);margin:28px 0 0;padding-top:22px;border-top:1px solid #2A2A2A}
+.gratis .fecho::before{content:"";display:block;width:32px;height:3px;background:var(--ouro);margin-bottom:14px}
+/* ---------- oferta ---------- */
+.modulos{list-style:none;padding:0;margin:20px 0 40px;border-top:1px solid var(--preto)}
+.modulos li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--cinza-200)}
+.modulos .num{font-weight:700;color:var(--cinza-700);font-variant-numeric:tabular-nums}
+.modulos .tag{display:inline-block;font-size:.75rem;font-weight:700;color:var(--preto);background:var(--ouro-tint);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:1px}
+.materiais{padding-left:1.2em;margin:12px 0 40px}
+.materiais li{margin-bottom:8px}
+.materiais li::marker{color:var(--ouro)}
+.modulos .tag-breve{background:var(--cinza-100);color:var(--cinza-700);font-weight:500}
+.oferta-destaque{margin:-24px 0 48px}
+.preco{background:var(--branco);border:2px solid var(--preto);border-top:6px solid var(--ouro);border-radius:6px;padding:28px 22px;text-align:center}
+.preco .valor{font-weight:700;font-size:clamp(3rem, 14vw, 4.5rem);line-height:1;letter-spacing:-.03em;margin:10px 0 12px}
+.preco .valor small{font-size:.38em;vertical-align:1em;margin-right:4px;letter-spacing:0}
+.preco p{margin-bottom:.6em}
+.preco .btn{margin-top:14px}
+.garantia{display:grid;grid-template-columns:72px 1fr;gap:18px;align-items:start;margin-top:40px}
+.selo{width:72px;height:72px;border-radius:6px;border:2px solid var(--preto);border-top:6px solid var(--ouro);color:var(--preto);display:grid;place-content:center;text-align:center;font-weight:700;line-height:1;font-size:1.75rem}
+.selo small{display:block;font-size:.5em;font-weight:500;margin-top:4px}
+/* ---------- CTA emocional ---------- */
+.final{background:var(--preto);color:var(--branco);text-align:left}
+.final h2{color:var(--branco)}
+.final p{color:#C9C9C9}
+.final .linha-marca{color:var(--branco)}
+/* ---------- FAQ ---------- */
+.faq details{border-bottom:1px solid var(--cinza-200)}
+.faq details:first-of-type{border-top:1px solid var(--preto)}
+.faq summary{cursor:pointer;list-style:none;padding:16px 40px 16px 0;min-height:56px;position:relative;font-weight:700;font-size:1.0625rem;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:4px;top:17px;width:22px;height:22px;background:var(--preto);-webkit-mask:var(--i-mais) center/20px no-repeat;mask:var(--i-mais) center/20px no-repeat}
+.faq details[open] summary::after{-webkit-mask-image:var(--i-menos);mask-image:var(--i-menos)}
+.faq details p{margin:0 0 18px;color:var(--cinza-700)}
+footer{padding:40px 0 110px;font-size:.875rem;color:var(--cinza-700);border-top:1px solid var(--cinza-200)}
+footer p{margin-bottom:.5em}
+footer b{text-transform:uppercase;letter-spacing:.06em;color:var(--preto)}
+/* ---------- barra fixa (mobile) ---------- */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--branco);border-top:1px solid var(--cinza-200);box-shadow:0 -8px 24px rgba(6,6,6,.08);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:12px;justify-content:space-between;transform:translateY(110%);transition:transform 260ms var(--ease)}
+.barra.on{transform:none}
+.barra .p{font-weight:700;font-size:1.3rem;line-height:1.1;white-space:nowrap}
+.barra .p small{display:block;font-weight:400;font-size:.75rem;color:var(--cinza-700);margin-top:2px}
+.barra .btn{font-size:1rem;padding:12px 18px;min-height:48px;flex:1;max-width:320px}
+@media (min-width:900px){.barra{display:none}}
+@media (prefers-reduced-motion:reduce){.barra,.btn{transition:none}.btn:active{transform:none}}
+</style>
+</head>
+<body>
+
+<!-- =================== 1. PROMESSA (QFD) + FILTRO =================== -->
+<header class="hero" id="topo">
+  <div class="wrap">
+    <div class="topo"><a class="marca" href="#topo" aria-label="Horatividade">Hor<b>a</b>tividade</a></div>
+
+    <p class="filtro">Para professores de anos finais e ensino médio, com disciplina específica.</p>
+
+    <h1>O planejamento do seu ano inteiro em uma tarde.</h1>
+
+    <p class="sub">Você monta uma vez o contexto da sua escola (calendário, apostila, turmas e o modelo que a coordenação exige) e a IA passa a derivar dele o planejamento anual e os planos de aula. No formato que a escola aceita, conferido por você.</p>
+
+    <p class="linha-marca">A burocracia resolvida. A aula é sua.</p>
+
+    <!-- ===== VÍDEO — OPCIONAL =====
+         Para desligar: data-vsl="off" no <html>.
+         Para ligar com vídeo real: apague o <span> abaixo e cole o <iframe> do player dentro de .vsl-caixa. -->
+    <div class="vsl">
+      <div class="vsl-caixa">
+        <!-- cole aqui o iframe do vídeo e mude data-vsl para "on" no <html> -->
+      </div>
+    </div>
+
+    <a class="btn btn-bloco" data-checkout href="#oferta" id="cta-hero">Começar meu planejamento por R$ 97</a>
+    <p class="sob-botao">Funciona no plano gratuito do Claude. Garantia de 7 dias.</p>
+
+    <p class="anti">Não é para educação infantil nem alfabetização. Aqui o assunto é disciplina, ementa, bimestre e coordenação.</p>
+
+    <figure class="folha-plan" aria-label="Exemplo de planejamento anual gerado com o método">
+      <header>
+        <strong>Planejamento anual · Física · 1º ano</strong>
+        <span>Escola fictícia, usada como exemplo no curso</span>
+      </header>
+      <table>
+        <thead><tr><th>Bimestre</th><th>Aulas</th><th>Unidade</th><th>Revisão</th></tr></thead>
+        <tbody>
+          <tr><td>1º</td><td class="n">13</td><td>Cinemática</td><td class="visto">✓ auditado</td></tr>
+          <tr><td>2º</td><td class="n">11</td><td>Leis de Newton</td><td class="visto">✓ auditado</td></tr>
+          <tr><td>3º</td><td class="n">14</td><td>Trabalho e energia</td><td class="visto">✓ auditado</td></tr>
+          <tr><td>4º</td><td class="n">10</td><td>Gravitação</td><td class="visto">✓ auditado</td></tr>
+        </tbody>
+      </table>
+    </figure>
+  </div>
+</header>
+
+<main>
+
+<!-- =================== 2. PARA QUEM É =================== -->
+<section id="para-quem">
+  <div class="wrap">
+    <h2>Para quem é</h2>
+    <ul class="lista sim">
+      <li>Você dá aula de uma disciplina específica nos anos finais ou no ensino médio, em escola pública ou particular.</li>
+      <li>Sua escola tem calendário bimestral ou trimestral, um material didático definido e um modelo de planejamento que a coordenação cobra.</li>
+      <li>Você já pediu um plano de aula para a IA e recebeu algo bonito que não servia: não fechava com o seu número de aulas, não cabia no modelo, parecia de outra escola.</li>
+      <li>Todo ano você recomeça o planejamento do zero, ou recicla o de três anos atrás porque não deu tempo.</li>
+    </ul>
+
+    <div class="bloco-nao">
+      <h3>Para quem não é</h3>
+      <ul class="lista nao" style="margin-top:14px">
+        <li>Educação infantil e alfabetização. O método foi desenhado para quem trabalha com ementa, disciplina e bimestre.</li>
+        <li>Quem procura atividade lúdica, jogo, mural ou lembrancinha.</li>
+        <li>Quem quer que a IA decida o que ensinar. Aqui quem decide continua sendo você.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 3. PROVA — DEMONSTRAÇÃO =================== -->
+<section class="divisa" id="demonstracao">
+  <div class="wide">
+    <div class="wrap" style="margin-left:0;width:auto;max-width:680px">
+      <h2>O mesmo pedido, duas respostas</h2>
+      <p class="lead">Antes de explicar o método, veja a diferença. O pedido é igual nos dois casos. Muda só o que a IA sabia antes de responder.</p>
+    </div>
+
+    <div class="pedido"><small>O pedido</small>“Faça o plano da próxima aula de cinemática do 1º ano.”</div>
+
+    <div class="duas">
+      <article class="resp errado">
+        <h3>Numa conversa comum</h3>
+        <dl>
+          <dt>Duração</dt>
+          <dd><span class="risco">2 aulas de 50 minutos</span><span class="nota">a turma tem uma aula dessa semana, porque sexta é conselho</span></dd>
+          <dt>Recursos</dt>
+          <dd><span class="risco">Laboratório, simulador no tablet</span><span class="nota">a escola não tem nenhum dos dois</span></dd>
+          <dt>Objetivo</dt>
+          <dd>Compreender os conceitos de movimento e aplicá-los no cotidiano.</dd>
+          <dt>Formato</dt>
+          <dd><span class="risco">Texto corrido</span><span class="nota">a coordenação pede tabela, com instrumento avaliativo</span></dd>
+        </dl>
+      </article>
+
+      <article class="resp certo">
+        <h3>Dentro do repositório do professor</h3>
+        <dl>
+          <dt>Posição no ano</dt>
+          <dd>Aula 7 de 13 do 1º bimestre, derivada da linha 7 do planejamento entregue.</dd>
+          <dt>Duração e recursos</dt>
+          <dd>1 aula de 50 minutos. Quadro e projetor, que é o que a sala tem.</dd>
+          <dt>Objetivo</dt>
+          <dd>No verbo e no nível do referencial que a escola adota, com o código conferido no documento oficial.</dd>
+          <dt>Formato</dt>
+          <dd>Linha pronta na tabela da coordenação, com as colunas e a nomenclatura dela.</dd>
+        </dl>
+      </article>
+    </div>
+    <p class="legenda">Exemplo ilustrativo, montado com uma escola fictícia. No curso, a montagem é feita na tela, do repositório vazio até o arquivo pronto.</p>
+  </div>
+</section>
+
+<!-- =================== 3b. PROVA — DEPOIMENTOS (placeholders) ===================
+     Só entram depoimentos reais da Turma Pioneira. Para esconder a seção: data-depoimentos="off" no <html>. -->
+<!-- SEÇÃO OCULTA até haver depoimentos. Para reativar: remova este comentário e mude data-depoimentos para "on" no <html>.
+<section class="divisa" id="depoimentos">
+  <div class="wide">
+    <h2>Quem já fez, na Turma Pioneira</h2>
+    <div class="depos">
+      <figure class="depo">
+        <div class="midia">FOTO OU VÍDEO<br>DEPOIMENTO_1</div>
+        <blockquote>DEPOIMENTO_1_TEXTO</blockquote>
+        <cite>DEPOIMENTO_1_NOME <span>· DEPOIMENTO_1_DISCIPLINA</span></cite>
+      </figure>
+      <figure class="depo">
+        <div class="midia">FOTO OU VÍDEO<br>DEPOIMENTO_2</div>
+        <blockquote>DEPOIMENTO_2_TEXTO</blockquote>
+        <cite>DEPOIMENTO_2_NOME <span>· DEPOIMENTO_2_DISCIPLINA</span></cite>
+      </figure>
+      <figure class="depo">
+        <div class="midia">FOTO OU VÍDEO<br>DEPOIMENTO_3</div>
+        <blockquote>DEPOIMENTO_3_TEXTO</blockquote>
+        <cite>DEPOIMENTO_3_NOME <span>· DEPOIMENTO_3_DISCIPLINA</span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- =================== 4. HISTÓRIA + AUTORIDADE =================== -->
+<section class="divisa" id="quem-ensina">
+  <div class="wrap">
+    <h2>Quem ensina</h2>
+    <div class="autor">
+      <!-- PREENCHER: foto do Jonas (troque esta div por <img src="..." alt="Prof. Jonas" class="foto">) -->
+      <div class="foto" aria-hidden="true" style="border-style:solid;border-color:var(--cinza-200)"></div>
+      <div>
+        <p class="credencial">Prof. Jonas. Doutor em Física pela UEL, 14 anos de sala de aula, e ainda em sala.</p>
+        <p>Comecei a usar IA para a papelada da escola assim que o ChatGPT apareceu. Primeiro para revisar banner de feira de ciências. Depois vieram as provas, o planejamento anual, os planos de aula.</p>
+        <p>Com o tempo, montei assistentes com o contexto do meu trabalho e passei a dividir com os colegas, de graça. Eles usavam e voltavam pedindo. Faz anos que é assim.</p>
+        <p>Foi olhando para isso que eu entendi uma coisa: o que fazia funcionar não era o prompt. Era o contexto por trás dele. E nas formações de IA que eu assisti, ninguém ensinava isso. Era sempre um passeio por ferramentas.</p>
+        <p>O Horatividade é esse contexto organizado em método, para você montar o seu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 5. CONTEÚDO — JEITO ERRADO VS. JEITO CERTO =================== -->
+<section class="divisa" id="jeito-certo">
+  <div class="wrap">
+    <h2>Por que a IA te devolve plano genérico</h2>
+    <p class="lead">Não é porque ela é ruim. Nem porque você não sabe usar. É porque a única coisa específica que você deu a ela foi o nome do conteúdo.</p>
+    <p>Ela não sabe que você tem 14 aulas no bimestre, e não 20. Que a apostila da sua escola inverte a ordem dos capítulos. Que a coordenação quer a coluna de instrumento avaliativo preenchida com a nomenclatura dela.</p>
+
+    <div class="analogia">
+      <p>Pense num professor substituto. Você não entrega a ele só o nome do conteúdo e espera a aula certa. Entrega o material, o calendário, o que a turma já viu e o modelo do registro.</p>
+      <p style="margin:0">A IA é o substituto mais rápido e mais literal que existe. E o mais dependente do que você deixou por escrito.</p>
+    </div>
+
+    <h3>Os três erros de quem já usa IA para planejar</h3>
+    <div class="erros">
+      <div class="erro">
+        <h3>Pedido avulso</h3>
+        <div class="lados">
+          <div class="hoje"><span class="rot">Hoje</span>Abre uma conversa, pede “plano de aula sobre cinemática” e aceita o que vier.</div>
+          <div class="metodo"><span class="rot">No método</span>Alimenta o repositório uma vez e deriva o ano inteiro dele.</div>
+        </div>
+      </div>
+      <div class="erro">
+        <h3>Contexto invisível</h3>
+        <div class="lados">
+          <div class="hoje"><span class="rot">Hoje</span>Supõe que a IA sabe quantas aulas você tem, qual apostila usa, o que a coordenação exige.</div>
+          <div class="metodo"><span class="rot">No método</span>Declara tudo por escrito, em arquivo, uma única vez.</div>
+        </div>
+      </div>
+      <div class="erro">
+        <h3>Formato por acaso</h3>
+        <div class="lados">
+          <div class="hoje"><span class="rot">Hoje</span>Recebe texto corrido e redigita na tabela ou na planilha da escola.</div>
+          <div class="metodo"><span class="rot">No método</span>O formato vira regra do projeto. O arquivo já sai pronto.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="divisa" id="metodo">
+  <div class="wrap">
+    <h2>O método A.U.L.A.</h2>
+    <p class="lead">Quatro etapas, nessa ordem. Cada uma entrega um arquivo, e a seguinte parte dele.</p>
+
+    <ol class="aula-lista">
+      <li>
+        <span class="letra" aria-hidden="true">A</span>
+        <div>
+          <h3>Alimentar</h3>
+          <p>Você monta o repositório uma vez: calendário, grade de aulas, sumário da apostila, perfil das turmas sem nenhum dado de aluno, e a diretriz pedagógica da sua escola. Bloom, BNCC, currículo estadual ou o que ela usar.</p>
+        </div>
+      </li>
+      <li>
+        <span class="letra" aria-hidden="true">U</span>
+        <div>
+          <h3>Uniformizar</h3>
+          <p>A IA aprende o modelo da coordenação e passa a devolver tudo nele: tabela em Word, PDF ou planilha. Chega de redigitar texto corrido dentro da tabela.</p>
+        </div>
+      </li>
+      <li>
+        <span class="letra" aria-hidden="true">L</span>
+        <div>
+          <h3>Ligar</h3>
+          <p>Primeiro o mapa do ano: quantas aulas você realmente tem, descontando prova, conselho e feriado. Dele sai o planejamento, e do planejamento saem os planos de aula em lote. Um arquivo puxa o outro. É aqui que a tarde rende.</p>
+        </div>
+      </li>
+      <li class="auditar">
+        <span class="letra" aria-hidden="true">A</span>
+        <div>
+          <h3>Auditar</h3>
+          <p>Você revisa com olho de professor, em quatro passadas: a conta das aulas, os códigos e a nomenclatura, o alinhamento pedagógico, e se dá para fazer com o que a escola tem. A assinatura no documento é sua. A responsabilidade também.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="carimbo">
+      <p>Isto não é fugir do trabalho pedagógico. É parar de redigitar burocracia.</p>
+      <p>A IA não decide o que ensinar, em que ordem nem com que profundidade. Ela distribui, redigita e formata. As escolhas continuam com você, e quem revisa o que sai está fazendo mais trabalho pedagógico do que quem copia o planejamento do ano passado.</p>
+    </div>
+  </div>
+</section>
+
+<section class="divisa" id="plataformas">
+  <div class="wrap">
+    <h2>E as plataformas de IA para professor?</h2>
+    <p>Elas existem, e muita gente assina. Funcionam como formulário: você escolhe “plano de aula”, preenche os campos, recebe um. Volta, escolhe outra ferramenta, preenche de novo. Este curso ensina outra coisa: montar o repositório que gera todos os materiais.</p>
+    <div class="contra">
+      <div>
+        <h3>Não conhecem a sua escola</h3>
+        <p>A plataforma não sabe qual apostila você usa, qual é o seu calendário nem que modelo a sua coordenação exige. O método começa exatamente aí.</p>
+      </div>
+      <div>
+        <h3>Saída de plataforma tem cara de plataforma</h3>
+        <p>Quando vários professores da mesma escola usam a mesma ferramenta, a coordenação percebe. Aqui, o que sai é do seu repositório.</p>
+      </div>
+      <div>
+        <h3>Assinatura é aluguel</h3>
+        <p>Parou de pagar, perdeu o acesso. O método você leva para qualquer ferramenta, inclusive as gratuitas.</p>
+      </div>
+      <div>
+        <h3>Um material de cada vez</h3>
+        <p>Lá, cada pedido é um formulário novo. Aqui, é o ano inteiro numa sessão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gratis" id="gratuito">
+  <div class="wrap">
+    <h2>Funciona no plano gratuito do Claude</h2>
+    <p class="lead">Você não precisa assinar nada para aplicar o método.</p>
+    <p>Projetos com arquivos de referência e geração de documento em Word, PDF e planilha estão disponíveis no plano gratuito do Claude. O curso foi desenhado dentro dos limites dele: repositório enxuto, um projeto por disciplina e pausas de conferência que economizam mensagens.</p>
+    <p>Prefere outra ferramenta? O repositório vai junto. O curso traz uma tabela de equivalência entre elas.</p>
+    <p class="fecho">O método funciona na ferramenta gratuita. Assinatura mensal continua sendo assinatura.</p>
+  </div>
+</section>
+
+<!-- =================== 6. EXPLICAÇÃO DA OFERTA =================== -->
+<section id="oferta">
+  <div class="wrap">
+    <h2>O que você recebe</h2>
+    <p>Você já começa hoje, com tudo o que precisa para sair com o planejamento pronto.</p>
+
+    <h3>Disponível agora</h3>
+    <ul class="materiais">
+      <li>Gravação completa da Turma Pioneira: sessão ao vivo de cerca de 2 horas, com professores de verdade montando o planejamento deles, com as dúvidas reais e o ritmo real.</li>
+      <li>Apostila do aluno: o método A.U.L.A. passo a passo, escrito, para consultar enquanto assiste.</li>
+      <li>Repositório-modelo: os arquivos já nomeados, prontos para preencher.</li>
+      <li>Módulo 00: como usar o curso e o material.</li>
+    </ul>
+    <p class="nota oferta-destaque">A gravação, a apostila e o repositório já bastam para entregar o plano anual e os planos de aula à coordenação.</p>
+
+    <h3>Aulas editadas, em liberação progressiva nas próximas semanas</h3>
+    <p>Cada etapa do método em uma aula curta, gravada com a tela aberta. Assista com a ferramenta aberta, fazendo junto.</p>
+    <ol class="modulos">
+      <li><span class="num">01</span><span>Por que a IA te devolve plano genérico <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">02</span><span>Alimentar I: os arquivos <span class="tag">A</span> <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">03</span><span>Alimentar II: a diretriz pedagógica da sua escola <span class="tag">A</span> <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">04</span><span>Uniformizar: tabela em Word e planilha <span class="tag">U</span> <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">05</span><span>Ligar I: o mapa do ano e o planejamento <span class="tag">L</span> <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">06</span><span>Ligar II: planos de aula em lote <span class="tag">L</span> <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">07</span><span>Auditar: a assinatura é sua <span class="tag">A</span> <span class="tag tag-breve">em breve</span></span></li>
+      <li><span class="num">08</span><span>A sua horatividade daqui pra frente <span class="tag tag-breve">em breve</span></span></li>
+    </ol>
+
+    <h3>Materiais de apoio</h3>
+    <p class="muted" style="margin:16px 0 0;font-weight:700">Já incluídos (no repositório e na apostila)</p>
+    <ul class="materiais" style="margin-bottom:24px">
+      <li>Repositório-modelo com os arquivos já nomeados, prontos para preencher</li>
+      <li>Checklist do que ter em mãos antes de começar</li>
+      <li>Frase da entrevista reversa, para a IA te perguntar o que falta sobre as suas turmas</li>
+      <li>Checklist de auditoria em quatro passadas</li>
+      <li>Tabela de equivalência entre ferramentas de IA</li>
+    </ul>
+    <p class="muted" style="margin:0;font-weight:700">Chegam junto com as aulas editadas</p>
+    <ul class="materiais">
+      <li>Bloco de instruções do projeto, comentado, para copiar e adaptar à sua escola</li>
+      <li>Prompt de template reverso, para a IA aprender o modelo da coordenação</li>
+      <li>Modelo de planejamento em tabela (.docx) e modelo de planilha com esquema de colunas (.xlsx)</li>
+      <li>Exemplo completo de planejamento anual e planos de aula, feitos numa escola fictícia</li>
+    </ul>
+
+    <div class="preco">
+      <p class="muted" style="margin:0">Acesso imediato à gravação, à apostila e ao repositório, e às aulas editadas conforme forem liberadas.</p>
+      <p class="valor"><small>R$</small>97</p>
+      <p>Pagamento único, sem mensalidade. Acesso pela área de membros da Hotmart.</p>
+      <p class="muted">Custa metade de um ano de assinatura de plataforma, e fica com você.</p>
+      <a class="btn btn-bloco" data-checkout href="#oferta">Começar meu planejamento por R$ 97</a>
+    </div>
+
+    <div class="garantia">
+      <div class="selo" aria-hidden="true">7<small>dias</small></div>
+      <div>
+        <h3 style="margin-bottom:6px">Garantia de 7 dias</h3>
+        <p>Entrou, assistiu, começou a montar e achou que não é para você? Dentro de 7 dias da compra você pede o reembolso pela própria Hotmart e recebe o valor integral. Não precisa se justificar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== 7. CTA EMOCIONAL =================== -->
+<section class="final" id="cta-final">
+  <div class="wrap">
+    <h2>Chegar na sala com energia, e não com ela já gasta no papel.</h2>
+    <p>Planejamento entregue no prazo sem virar a noite. Não recomeçar do zero a cada bimestre. Dar a aula que você planejou, e não a que deu tempo de preparar.</p>
+    <p>A burocracia não vai sumir. Mas redigitá-la todo ano é opcional.</p>
+    <p class="linha-marca">A burocracia resolvida. A aula é sua.</p>
+    <a class="btn btn-bloco" data-checkout href="#oferta">Começar meu planejamento por R$ 97</a>
+  </div>
+</section>
+
+<!-- =================== FAQ (quebra de objeções) =================== -->
+<section class="faq" id="duvidas">
+  <div class="wrap">
+    <h2>Dúvidas</h2>
+
+    <details>
+      <summary>Preciso saber usar IA?</summary>
+      <p>Não. Se você já abriu o ChatGPT ou o Claude e escreveu alguma coisa, tem o que precisa. O curso mostra cada passo na tela, do projeto vazio até o arquivo pronto.</p>
+    </details>
+    <details>
+      <summary>Preciso pagar alguma ferramenta?</summary>
+      <p>Não. Tudo funciona no plano gratuito do Claude. Se você já usa outra ferramenta, a tabela de equivalência mostra onde fica cada recurso nela.</p>
+    </details>
+    <details>
+      <summary>Serve para a minha disciplina?</summary>
+      <p>Serve para qualquer disciplina específica dos anos finais e do ensino médio. O método é o mesmo; o que muda é o que você coloca no repositório: a sua ementa, o seu calendário, o seu modelo.</p>
+    </details>
+    <details>
+      <summary>Minha escola usa BNCC, Bloom, currículo estadual ou uma proposta própria. Funciona?</summary>
+      <p>Funciona. A diretriz pedagógica entra como um bloco que você troca sem mexer no resto do projeto. O curso ensina a descobrir qual é a da sua escola a partir do próprio modelo de planejamento que ela exige.</p>
+    </details>
+    <details>
+      <summary>E se a escola pede planilha ou importação no sistema?</summary>
+      <p>Tem aula só para isso. O mesmo conteúdo sai em tabela no Word, em PDF ou em planilha, e em .csv quando o sistema da escola pede importação.</p>
+    </details>
+    <details>
+      <summary>Vou precisar colocar dados dos meus alunos na IA?</summary>
+      <p>Não, e não deve. Nome, nota, laudo ou qualquer dado que identifique aluno fica de fora, por respeito à LGPD. O perfil das turmas é descrito por características, e o curso mostra exatamente o que entra e o que não entra.</p>
+    </details>
+    <details>
+      <summary>Isso não é deixar a IA trabalhar no meu lugar?</summary>
+      <p>A IA distribui, redigita e formata. O que ensinar, em que ordem e com que profundidade continua sendo decisão sua, e a última etapa do método é justamente a sua revisão. É parar de redigitar burocracia, não abrir mão do trabalho pedagógico.</p>
+    </details>
+    <details>
+      <summary>Quanto tempo leva?</summary>
+      <p>A primeira montagem cabe em uma tarde, com os arquivos da escola em mãos. No ano seguinte você atualiza calendário e turmas e reaproveita o resto.</p>
+    </details>
+    <details>
+      <summary>Como recebo o acesso?</summary>
+      <p>Pela Hotmart. Assim que o pagamento é confirmado, você recebe por e-mail o acesso à área de membros.</p>
+    </details>
+    <details>
+      <summary>O curso já está completo?</summary>
+      <p>O que você precisa para fazer o planejamento já está lá: a gravação completa da Turma Pioneira, a apostila e o repositório-modelo. As aulas editadas, uma por etapa do método, entram nas próximas semanas e ficam liberadas para você sem custo adicional.</p>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Horatividade</b>. Método A.U.L.A. O planejamento do seu ano inteiro em uma tarde.</p>
+    <p>Contato: <!-- PREENCHER: e-mail de contato --><a href="mailto:CONTATO_EMAIL_AQUI">CONTATO_EMAIL_AQUI</a> · <!-- PREENCHER: página de privacidade --><a href="/privacidade">Política de privacidade</a></p>
+    <p>© 2026 Horatividade. Pagamento processado pela Hotmart.</p>
+  </div>
+</footer>
+
+<!-- barra fixa de compra, só no celular -->
+<div class="barra" id="barra" aria-hidden="true">
+  <span class="p">R$ 97<small>garantia de 7 dias</small></span>
+  <a class="btn" data-checkout href="#oferta" tabindex="-1">Começar agora</a>
+</div>
+
+<script>
+/* ============ CHECKOUT ============
+   Única variável de destino de todos os botões de compra.
+   Os parâmetros da URL (utm_*, fbclid etc.) são repassados ao checkout. */
+var HOTMART_CHECKOUT_URL = 'HOTMART_CHECKOUT_URL';
+
+(function () {
+  var configurado = /^https?:\/\//.test(HOTMART_CHECKOUT_URL);
+  var destino = HOTMART_CHECKOUT_URL;
+  if (configurado && location.search.length > 1) {
+    destino += (destino.indexOf('?') > -1 ? '&' : '?') + location.search.slice(1);
+  }
+  var botoes = document.querySelectorAll('[data-checkout]');
+  for (var i = 0; i < botoes.length; i++) {
+    if (configurado) botoes[i].href = destino;
+    botoes[i].addEventListener('click', function () {
+      if (typeof window.fbq === 'function') fbq('track', 'InitiateCheckout', {value: 97, currency: 'BRL'});
+    });
+  }
+
+  /* barra fixa: aparece depois do botão do topo e some na oferta e no fim */
+  var barra = document.getElementById('barra');
+  if (!('IntersectionObserver' in window) || !barra) return;
+  var visiveis = new Set();
+  var alvos = ['cta-hero', 'oferta', 'cta-final'].map(function (id) { return document.getElementById(id); });
+  var passou = false;
+  var io = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (e) {
+      if (e.isIntersecting) visiveis.add(e.target.id); else visiveis.delete(e.target.id);
+      if (e.target.id === 'cta-hero' && !e.isIntersecting && e.boundingClientRect.top < 0) passou = true;
+      if (e.target.id === 'cta-hero' && e.isIntersecting) passou = false;
+    });
+    var mostrar = passou && visiveis.size === 0;
+    barra.classList.toggle('on', mostrar);
+    barra.setAttribute('aria-hidden', mostrar ? 'false' : 'true');
+    barra.querySelector('a').tabIndex = mostrar ? 0 : -1;
+  });
+  alvos.forEach(function (el) { if (el) io.observe(el); });
+})();
+</script>
+</body>
+</html>
