@@ -1,0 +1,26 @@
+# Netlify: publica a raiz desta pasta, sem build.
+[build]
+  publish = "."
+
+# /politica-de-privacidade.html -> /politica-de-privacidade
+[[redirects]]
+  from = "/politica-de-privacidade.html"
+  to = "/politica-de-privacidade"
+  status = 301
+
+[[redirects]]
+  from = "/privacidade"
+  to = "/politica-de-privacidade"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
