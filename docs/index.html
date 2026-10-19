@@ -249,6 +249,22 @@ footer b{text-transform:uppercase;letter-spacing:.06em;color:var(--preto)}
 .barra .btn{font-size:1rem;padding:12px 18px;min-height:48px;flex:1;max-width:320px}
 @media (min-width:900px){.barra{display:none}}
 @media (prefers-reduced-motion:reduce){.barra,.btn{transition:none}.btn:active{transform:none}}
+/* ---------- desktop: duas colunas, título à esquerda ---------- */
+@media (min-width:1080px){
+  .wrap,.wide{width:min(100% - 112px, 1180px)}
+  section > .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,8fr);column-gap:80px;row-gap:0;align-items:start}
+  section > .wrap > *{grid-column:2;min-width:0}
+  section > .wrap > h2{grid-column:1;grid-row:1 / span 99;position:sticky;top:40px;margin:0;font-size:2.75rem}
+  section > .wrap > :nth-child(2){margin-top:0}
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);column-gap:72px;row-gap:0;align-items:start}
+  .hero .wrap > *{grid-column:1;min-width:0}
+  .hero .topo{grid-column:1 / -1;margin-bottom:24px}
+  .hero h1{font-size:4.25rem}
+  .wrap > .btn{justify-self:start}
+  .hero .folha-plan{grid-column:2;grid-row:2 / span 20;align-self:center;margin:0;max-width:none}
+  .hero{padding-bottom:88px}
+  section{padding:112px 0}
+}
 </style>
 </head>
 <body>
